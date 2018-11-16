@@ -15,7 +15,7 @@ setSizes();
 const HOLE = {
   x: screenWidth / 2,
   y: screenHeight / 2,
-  r: smallerSize / 4
+  r: smallerSize / 6
 };
 
 class Star {
@@ -56,7 +56,7 @@ const stars = new Array(STARS_COUNT);
 
 for (let i = 0; i < STARS_COUNT; i++) stars[i] = new Star();
 
-const canvas = document.createElement("canvas");
+const canvas = document.getElementById("black-hole");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 document.body.appendChild(canvas);

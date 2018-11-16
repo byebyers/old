@@ -69,6 +69,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fafafa;
+
 }
 
 [tabindex="-1"]:focus {
@@ -17946,4 +17947,10 @@ footer .pull-center {
   background: #ED213A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#black-hole {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
 }
