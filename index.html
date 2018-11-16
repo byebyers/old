@@ -1,336 +1,379 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-
-    <title>Jacob byers</title>
-    <meta name="description" content="Portfolio Site" />
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Jacob Byers">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@byersjacob">
-    <meta name="twitter:title" content="Jacob byers">
-    <meta name="twitter:description" content="Portfolio Site">
-    <meta name="twitter:creator" content="@byersjacob">
-    <!-- Twitter Summary card images must be at least 120x120px -->
-    <meta name="twitter:image" content="https://res.cloudinary.com/db4y7ocbu/image/upload/v1533162310/social.png">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Jacob byers" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.jacobbyers.me/" />
-    <meta property="og:image" content="https://res.cloudinary.com/db4y7ocbu/image/upload/v1533162310/social.png" />
-    <meta property="og:description" content="Portfolio Site" />
-    <meta property="og:site_name" content="Jacob byers" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link type="text/css" rel="stylesheet" href="styles/main.css" />
-    <link type="text/css" rel="stylesheet" href="styles/cosmo.css" />
-
-		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-		<script async type="text/javascript" src="styles/main.js"></script>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87909907-2">
-		</script>
-
-
-
-		<!-- jQuery library -->
-		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-		</script>
-
-		<!-- Popper JS -->
-		<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js">
-		</script>
-
-		<!-- Latest compiled JavaScript -->
-		<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
-		</script>
-
+  <title>Hello, world!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
 </head>
 
-<body onload="load()">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body>
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+          Jacob Byers </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-md-none collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#n-skills">Skills <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#n-projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#n-gigs">Gigs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#n-contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <img src="img/logo.png" id="logoimg" class="rounded-circle img-fluid ml-auto d-lg-none d-block" style="width:3.5rem;">
-        <img src="img/logo.png" id="logoimg" class="rounded-circle img-fluid mr-auto d-none d-lg-block" style="width:3.5rem;">
-        <div class="d-none d-lg-block">
-            <a href="https://www.behance.net/jebfreelance" target="_blank"><i class="fab fa-behance-square fa-inverse fa-2x mx-1"></i></a>
-            <a href="https://github.com/byebyers" target="_blank"><i class="fab fa-github fa-inverse fa-2x mx-1"></i></a>
-            <a href="https://medium.com/@byers.jacob" target="_blank"><i class="fab fa-medium fa-inverse fa-2x mx-1"></i></a>
-        </div>
-    </nav>
-
-    <div class="container-fluid no-gutters">
-        <div class="row">
-            <div id="left-nav" class="bg-light d-none d-lg-block col-2 p-0">
-                <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid px-3 mx-auto d-block mt-5">
-                <h3 class="text-dark text-center mt-3"><strong>Jacob Byers</strong></h2>
-                    <div class="list-group mt-4">
-                        <a href="#n-skills" class="text-white">
-                            <button type="button" class="btn btn-primary btn-lg btn-block mt-4 text-left pl-3"><i class="fas fa-certificate fa-inverse mr-3"></i>Skills</button>
-                        </a>
-                        <a href="#n-projects" class="text-white">
-                            <button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-project-diagram fa-inverse mr-3"></i>Projects</button>
-                        </a>
-                        <a href="#n-gigs" class="text-white">
-                            <button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-building fa-inverse mr-3"></i>Gigs</button>
-                        </a>
-                        <a href="#n-contact" class="text-white">
-                            <button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-user fa-inverse mr-3"></i>Contact</button>
-                        </a>
-                    </div>
-                    <div class="text-center mt-3">
-                        <p>Copyright: 2018</p>
-                    </div>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="material-icons">apps</i> Components
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="./index.html" class="dropdown-item">
+                <i class="material-icons">layers</i> All Components
+              </a>
+              <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
+                <i class="material-icons">content_paste</i> Documentation
+              </a>
             </div>
-
-            <div id="mobile-prof" class="bg-light d-lg-none col-md-5 card p-0">
-                <div class="row m-0 align-items-center py-3">
-                    <div class="col-2">
-                    </div>
-                    <div class="col-8 p-0">
-                        <div class="row align-items-center">
-                            <div class="col-4 p-0">
-                                <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid ml-auto d-block" style="max-height:5rem">
-                            </div>
-                            <div class="col-8 pr-0">
-                                <h3 class="text-dark text-left mb-0"><strong>Jacob Byers</strong></h2>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="text-center">
-                            <a href="https://www.behance.net/jebfreelance" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
-                            <a href="https://github.com/byebyers" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
-                            <a href="https://medium.com/@byers.jacob" target="_blank"><i class="fab fa-medium fa-2x mx-1"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div id="main-sect" class="col-lg-10 col-md-12 offset-lg-2 pl-lg-5 pt-5">
-                <div id="n-skills" class="row no-gutters">
-                    <div class="col-12 ml-md-3 mb-3">
-                        <h4>Skills</h4>
-                    </div>
-                    <div class="col-md-3 card border-primary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-bezier-curve mr-2"></i>Creative</div>
-                        <div class="card-body">
-                            <h4 class="card-title">UX/UI, Logos, Brands, and Album Covers</h4>
-                            <p class="card-text">I like app/brand design to be simple, colorful, clean, and concise. My art has a splash of space.</p>
-                            <p class="card-text">Top Design Tools:</p>
-                            <ul class="p-0">
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>After Effects</li>
-                                <li>XD</li>
-                            </ul>
-                            <a href="https://www.behance.net/jebfreelance" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-primary">Behance Portfolio</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-secondary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-code mr-2"></i>Full Stack Developer</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Front/Backend, Server Config, and Data</h4>
-                            <p class="card-text">I am handy with Linux but not tied down to any OS. Love bringing dreams to reality.</p>
-                            <p class="card-text">Top Developer Tools:</p>
-                            <ul class="p-0">
-                                <li>HTML5/CSS3</li>
-                                <li>Javascript</li>
-                                <li>Python</li>
-                                <li>SQL</li>
-                            </ul>
-                            <a href="https://github.com/byebyers" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-secondary">Github Repos</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-info ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-heart mr-2"></i>Tech Enthusiast</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Gadgets, Software Stacks, and Analysis</h4>
-                            <p class="card-text">I have worked on the administrative side of app development and have lots to share.</p>
-                            <p class="card-text">Top Smart Tools:</p>
-                            <ul class="p-0">
-                                <li>Business Solutions</li>
-                                <li>SEO & Analytics</li>
-                                <li>Brand Enlightenment</li>
-                                <li>Content Managment Systems</li>
-                            </ul>
-                            <a href="https://medium.com/@byers.jacob" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-info">Medium Profile</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row no-gutters mt-4">
-                    <div class="col-12 ml-md-3 mb-3">
-                        <h4 id="n-projects">Projects</h4>
-                    </div>
-                    <div class="col-md-3 card border-primary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-bezier-curve mr-2"></i>Ohmni Website</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/ohmni.jpg" alt="Image of Ohmni.tech's website">
-                            <h4 class="card-title">UX/UI, Illustrator, and Photoshop</h4>
-                            <p class="card-text">Art study of Ohmni.tech's website on Behance. Shows design elements and examples.</p>
-                            <a href="https://www.behance.net/gallery/64610743/Manifesting-Dreamscapes-Website-Design" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-primary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-secondary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-code mr-2"></i>Linux Server Configuration</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/ubuntu.jpg" alt="Image of Ubuntu's logo">
-                            <h4 class="card-title">AWS, Apache Web Server, and PostgreSQL</h4>
-                            <p class="card-text">Installed and configured all software to turn a Ubuntu AWS server into a web application server.</p>
-                            <a href="https://github.com/byebyers/ubuntu-catalog" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-secondary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-primary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-bezier-curve mr-2"></i>Hubble.golf App</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/hubble.jpg" alt="Image of a mock up for Hubble.golf">
-                            <h4 class="card-title">UX/UI, App Flow, and Invision</h4>
-                            <p class="card-text">Lead design and user flow for Hubble.golf. To connect golf professionals with tours.</p>
-                            <a href="https://projects.invisionapp.com/share/SMCU70VP9#/screens/246474917" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-primary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-secondary ml-md-3 mb-3" alt="Image of a map with pins for locatons of interest">
-                        <div class="card-header"><i class="fas fa-code mr-2"></i>Neighborhood Map</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/map.jpg">
-                            <h4 class="card-title">Ajax, Knockout, and JavaScript</h4>
-                            <p class="card-text">Developed a single-page web application that displays an area with various points of interest.</p>
-                            <a href="https://github.com/byebyers/ASUcoffeeAddict" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-secondary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-primary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-bezier-curve mr-2"></i>Logofolio</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/logofolio.jpg" alt="Image of a logo for a portfolio. Logo says logo candy.">
-                            <h4 class="card-title">Vectors, Illustrator, and Photoshop</h4>
-                            <p class="card-text">Latest logo designs made in colloboration with Ohmni. A tech company in Tempe, AZ.</p>
-                            <a href="https://www.behance.net/gallery/58715637/Logo-Candy" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-primary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-secondary ml-md-3 mb-3">
-                        <div class="card-header"><i class="fas fa-code mr-2"></i>Multi-User Blog</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/blog.jpg" alt="Image of a simple blog site.">
-                            <h4 class="card-title">Python and Google App Engine</h4>
-                            <p class="card-text">Built a multi-user blog, hosted on Google App Engine, with comments and login functionality.</p>
-                            <a href="https://github.com/byebyers/multi-user-blog" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-secondary">View Project</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row no-gutters mt-4">
-                    <div class="col-12 ml-md-3 mb-3">
-                        <h4 id="n-gigs">Gigs</h4>
-                    </div>
-                    <div class="col-md-3 card border-success ml-md-3 mb-3">
-                        <div class="card-header"><i class="far fa-building mr-2"></i>JEB</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/jeb.jpg" alt="Image of the JEB's logo.">
-                            <h4 class="card-title">Freelance Development and Consultancy</h4>
-                            <p class="card-text">Status: Current</p>
-                            <p class="card-text">Highlights:</p>
-                            <ul class="p-0">
-                                <li>Graphic Design</li>
-                                <li>Motion Graphics</li>
-                                <li>UX/UI</li>
-                                <li>Developer Services</li>
-                            </ul>
-                            <a href="#n-contact" class="text-white">
-                                <button type="button" class="btn btn-success">Contact</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-success ml-md-3 mb-3">
-                        <div class="card-header"><i class="far fa-building mr-2"></i>Ohmni</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/ologo.jpg" alt="Image of the Ohmni's logo.">
-                            <h4 class="card-title">Project Managment and Creative Direction</h4>
-                            <p class="card-text">Status: Current</p>
-                            <p class="card-text">Highlights:</p>
-                            <ul class="p-0">
-                                <li>SEO/Analytics</li>
-                                <li>App/Web Development</li>
-                                <li>Design Services</li>
-                                <li>Project Management</li>
-                            </ul>
-                            <a href="https://www.ohmni.tech/" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-success">Website</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card border-success ml-md-3 mb-3">
-                        <div class="card-header"><i class="far fa-building mr-2"></i>Hubble.golf</div>
-                        <div class="card-body">
-                            <img class="img-fluid mb-3" src="img/hub.jpg" alt="Image of Hubble.golf's logo.">
-                            <h4 class="card-title">Branding and Product Design</h4>
-                            <p class="card-text">Status: Past</p>
-                            <p class="card-text">Highlights:</p>
-                            <ul class="p-0">
-                                <li>Marketing</li>
-                                <li>Product Development</li>
-                                <li>Analysis</li>
-                                <li>Product QA</li>
-                            </ul>
-                            <a href="http://hubble.golf/" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-success">Website</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row no-gutters mt-4">
-            <div id="n-contact" class="pl-lg-5 col-lg-8 col-md-12 offset-lg-2">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRbMJB7D057ct8Y9-_xa7pCpnNeolEFPehRj2h9UZq3fQMUw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+              <i class="material-icons">cloud_download</i> Download
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-color: black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand text-center">
+            <img src="./assets/img/jebwhite.svg" alt="JEB Logo" style="width: 10em">
+            <h3>Under Construction</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <img class="img-fluid" src="./assets/img/designShot.png" alt="JEB Logo">
+        <h2 class="text-white">My name is Jacob. Nice to meet you!</h2>
+        <p class="lead text-white">From logo design to soical empowerment,
+        I look to create meaningful interactions
+        that better society. Whether it be telling
+        a story with beautiful design or getting
+        people access to tech, I like to help others
+        accomplish their dreams.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section text-center">
+        <!-- Tabs with icons on Card -->
+        <div class="card card-nav-tabs">
+          <div class="card-header card-header-primary">
+            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#profile" data-toggle="tab">
+                      <i class="material-icons">create</i> Creative
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#messages" data-toggle="tab">
+                      <i class="material-icons">code</i> Developer
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#settings" data-toggle="tab">
+                      <i class="material-icons">directions_run</i> Human
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="tab-content text-left">
+              <div class="tab-pane active" id="profile">
+                <h3 class="font-weight-bold">I enjoy creating</h3>
+                <p>
+                  Websites, UX/UI, Apps, Logos, Band Artwork,
+                  Prints, Motion Graphics, Infographics,
+                  etc.
+                </p>
+                <h3 class="font-weight-bold">Worthy Mentions</h3>
+                <p>
+                  App User-Flow Maps, Data Base Mock Ups, and Idea-to-Wireframe
+                  Communications.
+                </p>
+                <h3 class="font-weight-bold">Design Tools</h3>
+                <p>
+                  Illustrator, Photoshop, After Effects,
+                  InDesign, XD, and much more! Check out
+                  my portfolio on Behance!
+                </p>
+                <button class="btn sbtn-info"></i>Behance</button>
+              </div>
+              <div class="tab-pane" id="messages">
+                <h3 class="font-weight-bold">Languages I use</h3>
+                <p>
+                  HTML5, CSS3, Javascript ES6, SQL, and Python.
+                </p>
+                <h3 class="font-weight-bold">Frameworks <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                <p>
+                  Bootstrap, Material Design, jQuery, Sass, React, and Django.
+                </p>
+                <h3 class="font-weight-bold">Extracurricular <i class="fa fa-space-shuttle" aria-hidden="true"></i></h3>
+                <p>
+                  AWS, G Cloud, Linux Server Configs, CMS installs, Analytics,
+                  Wordpress/Shopify, Software Stacks, and Start-up Consultant.
+                  Check out my code on GitHub!
+                </p>
+                <button class="btn sbtn-default"></i>GitHub</button>
+              </div>
+              <div class="tab-pane" id="settings">
+                <h3 class="font-weight-bold">What I talk about</h3>
+                <p>
+                  Technology Trends, Alternative Living, Recycling, and Philosophy.
+                </p>
+                <h3 class="font-weight-bold">Away from the Computer</h3>
+                <p>
+                  Actively training for a Marathon and
+                  incorporating movement as much as possible.
+                  City bicycle riding and slack lining.
+                  Love parks and hiking!
+                </p>
+                <h3 class="font-weight-bold">Interests <i class="fa fa-bolt" aria-hidden="true"></i></h3>
+                <p>
+                  Ubuntu, Robotics, Growing Food, Networks,
+                  Intranetworks, Science, Communications, Social Policy.
+                  I plan to share more on Medium!
+                </p>
+                <button class="btn sbtn-warning"></i>Medium</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tabs with icons on Card -->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <h3 class="text-white text-center">Notable Projects</h3>
+      <div class="row">
+        <div class="col">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <img class="card-img-top" src="./assets/img/ohmni.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="font-weight-bold"><a>Ohmni.tech</a></h4>
+              <!-- Text -->
+              <p>Creative Agency that uses tech to
+                create polished apps.</p>
+              <!-- Button -->
+              <a href="#" class="btn sbtn-primary">Website</a>
+              <a href="#" class="btn sbtn-info">Behance</a>
+            </div>
+
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <img class="card-img-top" src="./assets/img/animated.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="font-weight-bold"><a>Logo Portfolio</a></h4>
+              <!-- Text -->
+              <p>List of designs for brands as animations. </p>
+              <!-- Button -->
+              <a href="#" class="btn sbtn-info">Behance</a>
+
+            </div>
+
+          </div>
+          <!-- Card -->
+        </div>
+        <div class="col">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <img class="card-img-top" src="./assets/img/hubble.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="font-weight-bold"><a>Hubble.golf</a></h4>
+              <!-- Text -->
+              <p>Golf company that uses tech to help professionals find tours.</p>
+              <!-- Button -->
+              <a href="#" class="btn sbtn-primary">Mock Up</a>
+              <a href="#" class="btn sbtn-success">Case Study</a>
+            </div>
+
+          </div>
+          <!-- Card -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <h2 class="text-white">Recent Collabs</h2>
+        <p class="lead text-white">
+          Always open for more!
+        </p>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <div class="row d-flex align-items-center">
+        <div class="col">
+          <img src="./assets/img/neuronUnit.png" alt="JEB Logo" class="img-fluid px-3">
+        </div>
+        <div class="col">
+          <!-- Card -->
+          <img src="./assets/img/ohmniBigLogo.png" alt="JEB Logo" class="img-fluid px-3">
+          <!-- Card -->
+        </div>
+        <div class="col">
+          <img src="./assets/img/hubbleBigLogo.png" alt="JEB Logo" class="img-fluid px-3">
+        </div>
+        <div class="col">
+          <img src="./assets/img/mantis.png" alt="JEB Logo" class="img-fluid px-3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section-signup">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login">
+            <form class="form" method="" action="">
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Let's Start Something</h4>
+              </div>
+              <p class="description text-center">Or Get in Touch</p>
+              <div class="card-body">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">face</i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Full Name...">
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">mail</i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email...">
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">subject</i>
+                    </span>
+                  </div>
+                  <input type="email" class="form-control" placeholder="Subject...">
+                </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">message</i>
+                    </span>
+                  </div>
+                  <textarea type="text" id="message" name="message" rows="6" class="form-control md-textarea" placeholder="Message..."></textarea>
+                </div>
+              </div>
+              <div class="footer text-center">
+                <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Submit</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://www.creative-tim.com/">
+              Creative Tim
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> by
+        <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--	Plugin for Sharrre btn -->
+  <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+  <!-- <script src="./assets/js/main.js" type="text/javascript"></script> -->
 </body>
 
 </html>
