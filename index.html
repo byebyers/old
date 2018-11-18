@@ -348,16 +348,48 @@
                 <a type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Submit</a>
               </div>
             </form>-->
-            <form accept-charset="UTF-8" action="https://usebasin.com/f/d2eb33d14acc" enctype="multipart/form-data" method="POST">
-              <label for="email-address">Email Address</label>
-              <input type="email" id="email" name="email" required>
-              <input type="subject" id="subject" name="subject" required>
-              <input type="name" id="name" name="name" required>
-
-              <textarea rows="4" cols="50" name="comment" required>
-              </textarea>
-
-              <button type="submit">Submit</button>
+            <form class="form" accept-charset="UTF-8" action="https://usebasin.com/f/d2eb33d14acc" enctype="multipart/form-data" method="POST">
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Let's Start Something</h4>
+              </div>
+              <p class="description text-center">Or Get in Touch</p>
+              <div class="card-body">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">face</i>
+                    </span>
+                  </div>
+                  <input class="form-control" type="name" id="name" name="name" placeholder="Full Name..." required>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">mail</i>
+                  </span>
+                </div>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email..." required>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">subject</i>
+                  </span>
+                </div>
+                <input type="subject" class="form-control" placeholder="Subject..." id="subject" name="subject" required>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">message</i>
+                  </span>
+                </div>
+                <textarea type="text" name="message" rows="6" class="form-control md-textarea" placeholder="Message..." required></textarea>
+              </div>
+              <div class="footer text-center">
+                <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Submit</button>
+              </div>
             </form>
           </div>
         </div>
