@@ -18007,12 +18007,12 @@ footer .pull-center {
   color: #2c3e50;
 }
 
-.jebart {
+.jeb-art {
   width: 40em;
 }
 
 @media screen and (min-width: 2000px) {
-  .jebart {
+  .jeb-art {
     width: 80em;
   }
 }
