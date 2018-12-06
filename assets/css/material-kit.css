@@ -18006,3 +18006,13 @@ footer .pull-center {
 .midnight {
   color: #2c3e50;
 }
+
+.jebart {
+  width: 40em;
+}
+
+@media screen and (min-width: 2000px) {
+  .jebart {
+    width: 80em;
+  }
+}
