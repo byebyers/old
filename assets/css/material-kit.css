@@ -18006,13 +18006,3 @@ footer .pull-center {
 .midnight {
   color: #2c3e50;
 }
-
-.jeb-art {
-  width: 40em;
-}
-
-@media screen and (min-width: 2000px) {
-  .jeb-art {
-    width: 80em;
-  }
-}
